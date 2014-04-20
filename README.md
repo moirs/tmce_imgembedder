@@ -16,9 +16,9 @@ No need to upload images, much less confusing for users.
 ## Installation
 
 1. Clone the repository into the tinymce plugin directory 
-	- cd tinmce/plugins
-	- git clone https://github.com/wilby/tmce_imgembedder.git imgembedder
-2. include the plugin in the toolbar on init by adding imgembedder to plugins and toolbar
+	- cd tinymce/plugins
+	- git clone https://github.com/wilby/tmce_imgembedder.git imgembedder (the plugin must be in a directory named imgembedder in the plugins directory)
+2. Include the plugin in the toolbar on init by adding imgembedder to plugins and toolbar
 ```
 tinymce.init({
 	selector: ".editor",
