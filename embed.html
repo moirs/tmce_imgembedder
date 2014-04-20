@@ -1,0 +1,48 @@
+<!Doctype html>
+<html>
+<head>
+</head>
+<body>
+<style type="text/css">
+	#imgcontainer {
+		padding: 5px;
+	}
+	
+	#imgcontainer label {
+		min-width: 100px;
+		color: #888888;
+		display: inline-block;
+		line-height: 24px;
+		height: 26px;
+		text-align: left;
+	}
+	
+	#imgcontainer input[type=text] {
+		width: 245px;
+		line-height: 24px;
+		height: 26px;
+		border-radius: 2px;
+		border: solid 1px #888888;
+	}
+	
+	#imgcontainer #imgheight, #imgcontainer #imgwidth {
+		width: 100px;
+	}
+	
+	p.last {
+		margin-bottom: 0;
+	}	
+	
+	.imgsmall {
+		font-size: .65em;
+	}
+</style>
+<div id='imgcontainer'>
+	<p><label for='images'>Image(s)</label> <input type="file" id="images" name="images" multiple accept="image/*" /></p>
+	<p><label for='flow'>Flow text around image</label> <input type='checkbox' name='flow' value='flow' id='flow'/> </p>
+	<p><label for='imgtitle'>Title <span class='imgsmall'>(optional)</span></label> <input type='text' name='imgtitle' id='imgtitle' value='' title='A description of the image being uploaded' /></p>	
+	<p><label for='imgheight'>Height <span class='imgsmall'>(optional)</span></label> <input type='text' name='imgheight' id='imgheight' value='' title='To keep the aspect ratio, only fill in either height or width' /> <span>px</span></p>
+	<p class='last'><label for='imgwidtht'>Width <span class='imgsmall'>(optional)</span></label> <input type='text' name='imgwidth' id='imgwidth' value='' title='To keep the aspect ratio, only fill in either height or width' /> <span>px</span></p>	
+</div>
+</body>
+</html>
